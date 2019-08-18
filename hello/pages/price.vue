@@ -1,8 +1,8 @@
 <template>
   <section class="container">
-    <p>{{message}}</p>
+    <h1>Price Page</h1>
     <hr>
-    <router-link to="/price">Price Page</router-link>
+    <router-link to="/">Top Page</router-link>
   </section>
 </template>
 
