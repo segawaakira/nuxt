@@ -1,5 +1,5 @@
-
-export default {
+const webpack = require('webpack')
+module.exports = {
   mode: 'spa',
   /*
   ** Headers of the page
@@ -48,6 +48,11 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
-    }
+    },
+    plugins: [
+      new webpack.ProvidePlugin({
+        '_': 'lodash'
+      })
+    ]
   }
 }
